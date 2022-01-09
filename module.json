@@ -1,28 +1,25 @@
 {
-	"name": "bugvolution",
-	"title": "Bugvolution",
-	"description": "A revolution in the war of chat log interface.",
-	"version": "0.0.31",
-	"minimumCoreVersion": "0.5.5",
-	"compatibleCoreVersion": "0.7.9",
+	"name": "buglog8",
+	"title": "Buglog8",
+	"description": "An actual chat log.",
+	"version": "0.0.1",
+	"minimumCoreVersion": "0.8.6",
+	"compatibleCoreVersion": "0.8.9",
 	"author": "Arietta",
 
 	"scripts": [],
-	"esmodules": [
-		"main.js",
-		"scripts/**/*.js", 
-		"libs/**/*.js"],
-	"styles": ["dist/bugvolution.css"],
+	"esmodules": ["main.js", "scripts/**/*.js", "libs/**/*.js"],
+	"styles": ["dist/buglog8.css"],
 
 	"languages": [
 		{
-		  "lang": "en",
-		  "name": "English",
-		  "path": "lang/en.json"
+			"lang": "en",
+			"name": "English",
+			"path": "lang/en.json"
 		}
-	  ],
-	
-	"url": "https://github.com/hanhmchau/bugvolution",
-	"manifest": "https://raw.githubusercontent.com/hanhmchau/bugvolution/master/module.json",
-	"download": "https://github.com/hanhmchau/bugvolution/archive/v0.0.31.zip"
+	],
+
+	"url": "https://github.com/hanhmchau/buglog8",
+	"manifest": "https://raw.githubusercontent.com/hanhmchau/buglog8/master/module.json",
+	"download": "https://github.com/hanhmchau/buglog8/archive/refs/tags/0.0.1.zip"
 }

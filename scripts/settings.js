@@ -5,14 +5,10 @@ export const ModuleOptions = {
 };
 
 export class ModuleSettings {
-    static MODULE_NAME = 'bugvolution';
+    static MODULE_NAME = 'bugvolution8';
 
 	static registerSettings() {
         game.settings.register(this.MODULE_NAME, ModuleOptions.LITE_MODE, this._buildConfig(ModuleOptions.LITE_MODE));
-        game.settings.register(this.MODULE_NAME, ModuleOptions.MARKDOWN, this._buildConfig(ModuleOptions.MARKDOWN, {
-            default: true
-        }));
-        game.settings.register(this.MODULE_NAME, ModuleOptions.BLUE_ME, this._buildConfig(ModuleOptions.BLUE_ME));
 	}
 
 	static getSetting(option) {
