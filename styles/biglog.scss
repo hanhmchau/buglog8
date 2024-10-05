@@ -148,48 +148,9 @@
 				position: relative;
 				margin-bottom: 7px;
 
-				.message:not(.roll-ui) {
-					.message-header {
-						justify-content: space-between;
-					}
-
-					.message-metadata {
-						text-align: right;
-						flex: 1;
-					}
-
-					.message-sender {
-						color: #4b4a44;
-						flex: 0 !important;
-						align-self: center;
-					}
-
-					.whisper-to {
-						display: block;
-						font-size: 12px;
-						width: 100%;
-						flex: 1 1 100% !important;
-					}
-
-					.jump {
-						position: absolute;
-						top: 6px;
-						right: 110px;
-						width: auto;
-					}
-
-					img {
-						flex: 0 !important;
-					}
-
-					.message-content {
-						margin-top: 5px;
-					}
-				}
-
 				.message {
 					padding: 7px;
-					border: none;
+					border: none !important;
 					position: relative;
 
 					z-index: 99;
@@ -213,9 +174,8 @@
 				}
 
 				.jump {
+					width: unset;
 					visibility: hidden;
-					top: 12px;
-					right: 12px;
 					font-size: 11px;
 					line-height: 11px;
 					height: 21px;
@@ -227,6 +187,7 @@
 					background: #f0f0e0;
 					cursor: pointer;
 					flex: 0;
+					margin-right: 5px;
 				}
 
 				&:hover .jump {

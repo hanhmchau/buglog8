@@ -1,25 +1,23 @@
 {
-	"name": "buglog8",
 	"title": "Buglog8",
 	"description": "An actual chat log.",
-	"version": "0.0.1",
-	"minimumCoreVersion": "0.8.6",
-	"compatibleCoreVersion": "0.8.9",
-	"author": "Arietta",
-
-	"scripts": [],
-	"esmodules": ["main.js", "scripts/**/*.js", "libs/**/*.js"],
-	"styles": ["dist/buglog8.css"],
-
+	"version": "0.1.0",
+	"compatibility": {
+		"minimum": "11",
+		"verified": "11"
+	},
+	"esmodules": ["main.js"],
+	"styles": ["dist/buglog8.min.css"],
 	"languages": [
 		{
 			"lang": "en",
 			"name": "English",
-			"path": "lang/en.json"
+			"path": "lang/en.json",
+			"flags": {}
 		}
 	],
-
 	"url": "https://github.com/hanhmchau/buglog8",
 	"manifest": "https://raw.githubusercontent.com/hanhmchau/buglog8/master/module.json",
-	"download": "https://github.com/hanhmchau/buglog8/archive/refs/tags/0.0.1.zip"
+	"download": "https://github.com/hanhmchau/buglog8/archive/refs/tags/0.1.0.zip",
+	"id": "buglog8"
 }

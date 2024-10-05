@@ -78,7 +78,7 @@ export class ChatLogRenderer {
 	_initializeIdsIfAbsent() {
 		const topmostId = $(this.log).find('.chat-message').first().attr('data-message-id');
 		const bottommostId = $(this.log).find('.chat-message').last().attr('data-message-id');
-		if (!this.topmostId) {
+		if (!this._topmostId) {
 			this._topmostId = topmostId;
 		}
 		if (!this._bottommostId) {
@@ -104,7 +104,6 @@ export class ChatLogRenderer {
 	}
 
 	async renderBatchCenteredAround(messageId) {
-		console.warn(messageId);
 		const messagesAround = this._getMessagesCenteredAround(messageId);
 		$(this.log).html(await this._render(messagesAround, 0, messagesAround.length));
 		this._topmostId = messagesAround[0].id;
@@ -113,7 +112,6 @@ export class ChatLogRenderer {
 	}
 
 	_scrollTo(messageId) {
-		console.warn(`[data-message-id=${messageId}]`);
 		const target = $(this.log).find(`[data-message-id=${messageId}]`);
 		this._scrollToTargetElement(target);
 		this._highlight(target);

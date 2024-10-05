@@ -34,9 +34,9 @@ class MessagesSorter {
 	static sort(messages, sortMode) {
 		switch (sortMode) {
 			case SORT_MODE.NEWEST:
-				return messages.sort((a, b) => b.data.timestamp - a.data.timestamp);
+				return messages.sort((a, b) => b.timestamp - a.timestamp);
 			case SORT_MODE.OLDEST:
-				return messages.sort((a, b) => a.data.timestamp - b.data.timestamp);
+				return messages.sort((a, b) => a.timestamp - b.timestamp);
 			default:
 				return messages;
 		}
@@ -58,7 +58,7 @@ class MessageMatcher {
 
 	matches(message, searchTerm) {
 		const normalizedSearchTerm = normalize(searchTerm.trim().toLowerCase());
-		const content = message.data.content;
+		const content = message.content;
 		this._div.innerHTML = content;
 		const textContent = this._div.textContent || this._div.innerText || '';
 		const normalizedContent = normalize(textContent.trim().toLowerCase());
