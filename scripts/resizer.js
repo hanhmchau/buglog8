@@ -3,6 +3,8 @@ export default class ApplicationResizer {
 
 	constructor(application) {
 		this.application = application;
+		this.application.options.height = window.innerHeight;
+		this.application.options.width = window.innerWidth;
 	}
 
 	resize(boundaries) {

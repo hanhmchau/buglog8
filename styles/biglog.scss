@@ -37,10 +37,21 @@
 		border-radius: 5px 50px 50px 5px;
 	}
 
-	.message.highlight {
-		background-color: #fffacd !important;
-		background: none;
-		transition: none;
+	@keyframes fadeOut {
+		0% {
+			background-color: #fffacd;
+		}
+		30% {
+			background-color: #fffacd;
+		}
+	}
+
+	:is(.message, .chat-message) {
+		transition: background-color 1s;
+
+		&.highlight {
+			animation: fadeOut 3s linear;
+		}
 	}
 
 	#logsearch {
@@ -187,6 +198,7 @@
 					background: #f0f0e0;
 					cursor: pointer;
 					flex: 0;
+					margin-top: 2px;
 					margin-right: 5px;
 				}
 

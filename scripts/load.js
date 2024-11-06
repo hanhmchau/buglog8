@@ -128,6 +128,6 @@ export class ChatLogRenderer {
 
 	_highlight(target) {
 		target.addClass('highlight');
-		setTimeout(() => target.removeClass('highlight'), 2000);
+		// setTimeout(() => target.removeClass('highlight'), 2000);
 	}
 }
