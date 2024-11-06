@@ -1,7 +1,7 @@
 {
 	"title": "Buglog8",
 	"description": "An actual chat log.",
-	"version": "0.1.0",
+	"version": "0.1.1",
 	"compatibility": {
 		"minimum": "11",
 		"verified": "11"
@@ -18,6 +18,6 @@
 	],
 	"url": "https://github.com/hanhmchau/buglog8",
 	"manifest": "https://raw.githubusercontent.com/hanhmchau/buglog8/master/module.json",
-	"download": "https://github.com/hanhmchau/buglog8/archive/refs/tags/0.1.0.zip",
+	"download": "https://github.com/hanhmchau/buglog8/archive/refs/tags/0.1.1.zip",
 	"id": "buglog8"
 }
