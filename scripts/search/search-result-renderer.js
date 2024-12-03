@@ -52,18 +52,17 @@ export default class SearchResultRenderer {
 		for (const msg of messages) {
 			html.push(await this._renderOneMessage(msg));
 		}
-		this._element.find('#chat-log .results-container').html(html);
+		this._element.find('#chat-results .results-container').html(html);
 	}
 
 	async _renderOneMessage(message) {
 		const node = $('<div class="result"></div>');
 		node.append(await message.getHTML());
-		node.find('.message').removeClass('continued').addClass('leading');
-		node.find('.message-metadata').prepend(`<button class="jump" data-message-id=${message.id}>Jump</button>`);
+		node.find('.message').removeClass('continued').addClass('leading').append(`<button class="jump" data-message-id=${message.id}>Jump</button>`);
 		return node;
 	}
 
 	_toggleChatResults(isVisible) {
-		this._element.find('#chat-log').toggleClass('none', !isVisible);
+		this._element.find('#chat-results').toggleClass('none', !isVisible);
 	}
 }
