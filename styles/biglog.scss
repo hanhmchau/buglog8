@@ -243,4 +243,8 @@
 			}
 		}
 	}
+
+	section.window-content {
+		height: calc(100% - 30px);
+	}
 }

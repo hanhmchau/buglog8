@@ -4,7 +4,7 @@
 	"version": "0.1.2",
 	"compatibility": {
 		"minimum": "11",
-		"verified": "11"
+		"verified": "12"
 	},
 	"esmodules": ["main.js"],
 	"styles": ["dist/buglog8.min.css"],
